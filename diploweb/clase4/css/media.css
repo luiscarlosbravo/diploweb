@@ -1,0 +1,60 @@
+#mivideo{
+	display: block;
+	filter: sepia(1);
+	margin: 0 auto;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+.galeria{
+	/*box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);*/
+	margin: 4em auto;
+	padding: 0.5em;
+	text-align: center;
+	width: 60%;
+}
+
+.galeria div{
+	border-radius: 1em;
+	box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+	display: inline-block;
+	filter: grayscale(1);
+	padding: 6em;
+	transition: all linear 1s;
+	/*width: 20%;*/
+}
+
+.galeria div:hover{
+	filter: grayscale(0);
+	position: relative;
+	transform: scale(2,2);
+	z-index: 2;
+}
+
+
+.galeria .foto1{
+	background: url("images/foto1.jpg");
+	background-size: cover;
+	transform: rotate(10deg);
+}
+
+.galeria .foto2{
+	background: url("images/foto2.jpg");
+	background-size: cover;
+	transform: rotate(-10deg);
+}
+
+.galeria .foto3{
+	background: url("images/foto3.jpg");
+	background-size: cover;
+	transform: rotate(10deg);
+}
+
+.galeria .foto4{
+	background: url("images/foto4.jpg");
+	background-size: cover;
+	transform: rotate(-10deg);
+}
+
